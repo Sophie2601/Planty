@@ -1,18 +1,13 @@
 <?php
 /**
- * The template for displaying the footer
+ * The template for displaying the footer.
  *
- * Contains the opening of the #site-footer div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package WordPress
- * @subpackage Twenty_Twenty
- * @since Twenty Twenty 2.2
+ * @package OceanWP WordPress theme
  */
 
 ?>
-			<footer id="site-footer" class="header-footer-group">
+
+<footer id="site-footer" class="header-footer-group">
                 Mentions légales
 			</footer><!-- #site-footer -->
 

@@ -1,41 +1,66 @@
 /*
- Theme Name:   Planty
- Theme URI:    https://localhost/planty
- Description:  Thème Planty basé sur le thème TwentyTwenty
- Author:       Sophie
- Author URI:   sophie.gir4@gmail.com/
- Template:     twentytwenty
- Version:      2.2
- License:      GNU General Public License v2 or later
- License URI:  http://www.gnu.org/licenses/gpl-2.0.html
- Tags:         boissons énergisantes à base de plantes
- Text Domain:  planty
+Theme Name: Planty
+Theme URI: https://oceanwp.org/
+Template: oceanwp
+Author: OceanWP
+Author URI: https://oceanwp.org/about-oceanwp/
+Description: OceanWP is the perfect theme for your project. Lightweight and highly extendable, it will enable you to create almost any type of website such a blog, portfolio, business website and WooCommerce storefront with a beautiful &amp; professional design. Very fast, responsive, RTL &amp; translation ready, best SEO practices, unique WooCommerce features to increase conversion and much more. You can even edit the settings on tablet &amp; mobile so your site looks good on every device. Work with the most popular page builders as Elementor, Beaver Builder, Brizy, Visual Composer, Divi, SiteOrigin, etc... Developers will love his extensible codebase making it a joy to customize and extend. Best friend of Elementor &amp; WooCommerce. Looking for a Multi-Purpose theme? Look no further! Check the demos to realize that it's the only theme you will ever need: https://oceanwp.org/demos/
+Tags: two-columns,right-sidebar,footer-widgets,blog,news,custom-background,custom-menu,post-formats,rtl-language-support,sticky-post,editor-style,threaded-comments,translation-ready,buddypress,custom-colors,featured-images,full-width-template,theme-options,e-commerce,block-styles,wide-blocks,accessibility-ready
+Version: 3.4.3.1683883925
+Updated: 2023-05-12 11:32:05
+
 */
 
-/* HEADER */
-
-
-#site-header {
-    
-    background: #FFFFFF;
+#site-header-inner {
     height: 80px;
-    left: 0px;
-    top: 0px;
 }
 
-/* LIENS DU MENU */ 
-li.menu-item a {
-    color: #313332 !;
-    display: inline-block;
-    padding: 10px 25px;
-    border-radius: 10px;
+.container {
+    width: 1440px;
+}
+
+#site-logo #site-logo-inner a img {
+    margin-right: 30px;
+}
+
+#menu-item-71 a {
+
+    color: black !important;
+    align-items: center;
+    margin-right: 200px;
+}
+
+#menu-item-75 a {
+
+    background-color: #DC9F96;
+    color: white !important;
+    left: 25.85%;
+    right: 25.85%;
+    top: 37.5%;
+    bottom: 38.75%;
+    height: 80px;
+    width: 236px;
     text-align: center;
 }
 
-/* FOOTER */
-.footer-nav-widgets-wrapper {
-    padding: 20px;
-    background-color: white;
+.dropdown-menu * {
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+    align-items: center;
+}
+
+#footer-bottom {
+   background-color: white;
+
+}
+
+#site-footer {
+    color:black;
     text-align: center;
+    height: 60px;
+
 }
 
