@@ -24,23 +24,29 @@ Updated: 2023-05-12 11:32:05
 }
 
 #menu-item-71 a {
-
     color: black !important;
     align-items: center;
-    margin-right: 200px;
+    margin-right: 20px;
 }
 
 #menu-item-75 a {
-
     background-color: #DC9F96;
     color: white !important;
-    left: 25.85%;
-    right: 25.85%;
-    top: 37.5%;
-    bottom: 38.75%;
-    height: 80px;
-    width: 236px;
+    left: 25%;
+    right: 25%;
+    top: 30%;
+    bottom: 38%;
+    height: 70px;
+    width: 200px;
     text-align: center;
+}
+
+#menu-item-75 a:hover {
+    color: red;
+}
+
+#menu-item-96 a {
+    color: black !important;
 }
 
 .dropdown-menu * {
@@ -61,6 +67,5 @@ Updated: 2023-05-12 11:32:05
     color:black;
     text-align: center;
     height: 60px;
-
 }
 

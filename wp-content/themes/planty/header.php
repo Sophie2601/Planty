@@ -33,8 +33,6 @@
 
 			<?php do_action( 'ocean_header' ); ?>
 
-			<?php add_filter('wp_nav_menu_items', 'add_admin_link', 10, 2); ?>
-
 			<?php do_action( 'ocean_before_main' ); ?>
 
 			<main id="main" class="site-main clr"<?php oceanwp_schema_markup( 'main' ); ?> role="main">
