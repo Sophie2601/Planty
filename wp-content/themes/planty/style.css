@@ -11,22 +11,11 @@ Updated: 2023-05-12 11:32:05
 
 */
 
-#site-header-inner {
-    height: 80px;
-}
-
-.container {
-    width: 1440px;
-}
-
-#site-logo #site-logo-inner a img {
-    margin-right: 30px;
-}
 
 #menu-item-71 a {
     color: black !important;
     align-items: center;
-    margin-right: 20px;
+    margin-left: 30px;
 }
 
 #menu-item-75 a {
@@ -42,30 +31,42 @@ Updated: 2023-05-12 11:32:05
 }
 
 #menu-item-75 a:hover {
-    color: red;
+    color: red !important;
 }
 
-#menu-item-96 a {
-    color: black !important;
-}
+
 
 .dropdown-menu * {
     font-family: 'Syne';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 19px;
     align-items: center;
 }
-
-#footer-bottom {
-   background-color: white;
-
-}
-
+ 
 #site-footer {
-    color:black;
+    font-family: 'Syne';
+    font-style: normal;
     text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    color:black;
+    background-color: white;
     height: 60px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
