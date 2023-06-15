@@ -11,62 +11,252 @@ Updated: 2023-05-12 11:32:05
 
 */
 
-
-#menu-item-71 a {
-    color: black !important;
-    align-items: center;
-    margin-left: 30px;
+#main #content-wrap {
+    padding: 0px;
 }
 
-#menu-item-75 a {
+/*HEADER*/
+
+#site-header {
+    border-bottom: 0px;
+}
+
+.boxed-layout #wrap .container {
+    padding: 0px;
+}
+
+div#site-logo-inner {
+    position: relative;
+    padding-left: 50px;
+}
+
+#site-navigation-wrap .dropdown-menu>li>a {
+    font-size: 16px;
+    font-weight: none;
+}
+
+li#menu-item-4640 a {
+    color: black !important;
+    font-family: 'Syne';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+}
+
+#menu-item-4639 a {
     background-color: #DC9F96;
     color: white !important;
-    left: 25%;
-    right: 25%;
-    top: 30%;
-    bottom: 38%;
-    height: 70px;
-    width: 200px;
+    text-align: center;
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
     text-align: center;
 }
 
-#menu-item-75 a:hover {
-    color: red !important;
+#menu-item-4639 a:hover {
+    background-color: red !important;
 }
 
+#site-navigation-wrap .dropdown-menu>li>a {
+    font-size: 16px;
+    font-family: 'Syne';
+    font-style: normal;
+    font-weight: 400;
+    color: black;
+    padding: 0 60px;
+}
 
+/*NOUS CONTACTER*/
 
-.dropdown-menu * {
+input {
+    width: 383px;
+    height: 71px;
+    left: 529px;
+    top: 1154px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04);
+    border-radius: 7px;
+}
+
+.elementor-67 .elementor-element.elementor-element-b42e685 .wpr-button[type="submit"] {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 55px;
+    width: 198px;
+    padding: 20px 90px 20px 90px;
+    border-radius: 5px;
+}
+
+/*COMMANDER*/
+
+.fruit_commande .form_commande {
+    float: left;
+}
+
+.fruit_commande .boutons_modif {
+    margin-left: 0%;
+}
+
+.form_commande {
+    width: 51px;
+    height: 56px;
+    background-color: #fff;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.plus, .moins {
+   background-color: #DC9F96;
+   width: 28px;
+   height: 28px;
+   border-width: 0px;
+   margin-left: 0px;
+   color: #fff;
+   border-radius: 0px 4px 4px 0px;
+}
+
+.plus {
+    position: relative;
+    border-bottom: 1px solid white;
+}
+
+form input[type=number] {
+    width: 51px;
+    height: 56px;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 400;
+}
+.elementor-element.elementor-element-b047b0e.elementor-widget__width-initial.elementor-widget.elementor-widget-shortcode {
+    width: 193px;
+    margin-left: 46px;
+}
+
+.wpr-button.wpr-button-effect.wpr-button-none {
+    width: 100px;
+    height: 56px;
+    margin-left: 42px;
+}
+
+.wpr-button-text {
+    width: 19px;
+    height: 37px;
+}
+
+@media screen and (max-width: 1200px) {
+    .fruit_commande {
+        
+    }
+}
+
+/*FORMULAIRE COMMANDE*/
+
+#form-group #informations {
+    float: left;
+    width: 50%;
+    margin-left: 200px;
+} 
+    
+#form-group #livraison {
+    margin-left: -180px;
+}
+
+#form-group {
+    display: flex;
+    font-family: syne;
+}    
+
+#informations, #livraison {
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 15px;
+    }
+
+.wpcf7-form-control-wrap {
+    display: flex;
+    width: 383px;
+    height: 71px;
+    background-color: #fff;
+    border-radius: 5px;
+}    
+
+.border-middle {
+    position: absolute;
+    border-left: 2px solid #fff;
+    display: inline-block;
+    height: 447px;
+    margin-left: 602px;
+}
+
+.wpcf7-form-control.has-spinner.wpcf7-submit {
+    width: 198px;
+    height: 55px;
+    top: 1164px;
+    background-color: #E0B9B4;
+    border-radius: 5px;
+    font-family: syne;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-top: 460px;
+    margin-left: -500px;
+}
+
+@media screen and (max-width: 1200px) {
+    .border-middle {
+        display: none;
+    }
+    label {
+        font-size: 16px;
+    }
+    
+    .elementor-73 .elementor-element.elementor-element-bdb5ec2 > .elementor-element-populated {
+        margin: 0px;
+    }
+
+    #form-group #livraison {
+        margin-left: 200px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+    #form-group {
+        width: 100%;
+        flex-direction: column;
+        justify-content: left;
+        padding: 0px !important;
+        margin-left: 25px;
+    }
+
+    .wpcf7-form-control-wrap {
+        width: 270px;
+        height: 84px;
+    }
+}
+
+/*FOOTER*/
+
+#footer-widgets .footer-box {
+   padding-left: 50%;
+}
+
+.boxed-layout #footer-widgets {
+    background-color: #fff;
+}
+
+#footer-widgets .footer-box a {
+    display: flex;
+    color: #000;
     font-family: 'Syne';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    align-items: center;
 }
- 
-#site-footer {
-    font-family: 'Syne';
-    font-style: normal;
-    text-align: center;
-    font-weight: 400;
-    font-size: 16px;
-    color:black;
-    background-color: white;
-    height: 60px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
