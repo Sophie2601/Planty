@@ -20,7 +20,15 @@ if ( !function_exists( 'child_theme_configurator_css' ) ):
     }
 endif;
 add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
-
-
-
+function add_admin_link_to_second_position_to_menu($items,$args){
+    if(is_user_logged_in() && $args->theme_location == 'main_menu'){
+        $admin_link='<li><a href="'.admin_url().'">Admin</a></li>';
+        $items = substr_replace($items,$admin_link,strpos($items,'</li>')+5,0);
+    }
+    return $items; 
+}
+add_filter('wp_nav_menu_items','add_admin_link_to_second_position_to_menu',10,2);
 // END ENQUEUE PARENT ACTION
+
+add_filter('wpcf7_autop_or_not', '__return_false');
+
