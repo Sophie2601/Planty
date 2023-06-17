@@ -11,6 +11,7 @@ Updated: 2023-05-12 11:32:05
 
 */
 
+
 #main #content-wrap {
     padding: 0px;
 }
@@ -95,7 +96,15 @@ input {
     border-radius: 5px;
 }
 
-/*COMMANDER*/
+/*FORMULAIRE COMMANDER*/
+
+.formulaire_commande {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-bottom: 1px solid white;
+}
 
 .fruit_commande .form_commande {
     float: left;
@@ -103,6 +112,13 @@ input {
 
 .fruit_commande .boutons_modif {
     margin-left: 0%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fruit_commande {
+    display: flex;
+    width:  25%;
 }
 
 .form_commande {
@@ -150,28 +166,37 @@ form input[type=number] {
     height: 37px;
 }
 
-@media screen and (max-width: 1200px) {
-    .fruit_commande {
-        
-    }
-}
-
-/*FORMULAIRE COMMANDE*/
-
-#form-group #informations {
-    float: left;
-    width: 50%;
-    margin-left: 200px;
-} 
-    
-#form-group #livraison {
-    margin-left: -180px;
+form input[type=button] {
+    background-color: #E0B9B4;
+    width: 100px;
+    height: 56px;
+    border-radius: 5px;
+    margin-right: 710px;
+    margin-left: 10px;
+    margin-bottom: 100px;
+    text-transform: capitalize;
+    font-family: syne;
+    font-size: 15px;
 }
 
 #form-group {
     display: flex;
     font-family: syne;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 30px;
 }    
+
+#form-group #informations {
+    width: 50%;
+} 
+
+#form-group #livraison {
+    padding-left: 20px;
+    width: 50%;
+    border-left: 1px solid white;
+}
 
 #informations, #livraison {
     font-size: 20px;
@@ -181,24 +206,13 @@ form input[type=number] {
 
 .wpcf7-form-control-wrap {
     display: flex;
-    width: 383px;
-    height: 71px;
     background-color: #fff;
     border-radius: 5px;
 }    
 
-.border-middle {
-    position: absolute;
-    border-left: 2px solid #fff;
-    display: inline-block;
-    height: 447px;
-    margin-left: 602px;
-}
-
 .wpcf7-form-control.has-spinner.wpcf7-submit {
     width: 198px;
     height: 55px;
-    top: 1164px;
     background-color: #E0B9B4;
     border-radius: 5px;
     font-family: syne;
@@ -209,30 +223,17 @@ form input[type=number] {
     margin-left: -500px;
 }
 
-@media screen and (max-width: 1200px) {
-    .border-middle {
-        display: none;
-    }
-    label {
-        font-size: 16px;
-    }
-    
-    .elementor-73 .elementor-element.elementor-element-bdb5ec2 > .elementor-element-populated {
-        margin: 0px;
+@media screen and (min-width: 320px) and (max-width: 958px) {
+    body.default-breakpoint .oceanwp-mobile-menu-icon {
+        margin-right: 25%;
     }
 
-    #form-group #livraison {
-        margin-left: 200px;
-    }
-}
-
-@media screen and (min-width: 320px) and (max-width: 1200px) {
     #form-group {
         width: 100%;
         flex-direction: column;
-        justify-content: left;
+        align-items: center;
         padding: 0px !important;
-        margin-left: 25px;
+        margin: 0 auto;
     }
 
     .wpcf7-form-control-wrap {
@@ -241,22 +242,63 @@ form input[type=number] {
     }
 }
 
+@media screen and (min-width: 758px) and (max-width: 958px) {
+    #form-group {
+        margin-left: 50%;
+    }  
+
+    .formulaire_commande {
+        width: 100%;
+    }
+
+    #form-group {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wpcf7-form-control-wrap {
+        width: 270px;
+        height: 84px;
+    }
+
+    #form-group #livraison {
+        padding: 0%;
+        border-left: none;
+        margin-right: 100%;
+    }
+
+    #form-group #informations {
+        margin-right: 100%;
+    }
+
+    .wpcf7-form-control.has-spinner.wpcf7-submit {
+        margin-left: 50%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    #form-group #livraison {
+        margin-left: 25%;
+        border-left: none;
+    }
+
+    #form-group #informations {
+        margin-left: 25%;
+    }
+
+    .wpcf7-form-control.has-spinner.wpcf7-submit {
+        margin-left: 25%;
+    }
+
+    .formulaire_commande {
+        visibility: hidden;
+    }
+}
+
 /*FOOTER*/
 
-#footer-widgets .footer-box {
-   padding-left: 50%;
-}
+.elementor-column-gap-default>.elementor-column>.elementor-element-populated {
+    padding: 20px;
 
-.boxed-layout #footer-widgets {
-    background-color: #fff;
-}
-
-#footer-widgets .footer-box a {
-    display: flex;
-    color: #000;
-    font-family: 'Syne';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
 }
